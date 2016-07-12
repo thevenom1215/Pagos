@@ -7,14 +7,14 @@
         android:layout_height="wrap_content"
         android:text="clave del contrato"
         android:id="@+id/textView"
-        android:layout_marginTop="10dp"
-        android:textSize="15dp"
+        android:layout_marginTop="60dp"
+        android:textSize="30dp"
         android:textColor="#ff0c0c0c"
-        android:layout_marginLeft="10dp"
-        android:layout_marginStart="22dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,7 +22,7 @@
         android:text="Titular"
         android:id="@+id/textView2"
         android:layout_marginTop="20dp"
-        android:textSize="15dp"
+        android:textSize="30dp"
         android:textColor="#ff0e0e0e"
         android:layout_below="@+id/textView"
         android:layout_alignLeft="@+id/textView"
@@ -37,7 +37,7 @@
         android:layout_alignLeft="@+id/textView2"
         android:layout_alignStart="@+id/textView2"
         android:layout_marginTop="20dp"
-        android:textSize="15dp"
+        android:textSize="30dp"
         android:textColor="#ff070707" />
 
     <TextView
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:text="pagos"
         android:id="@+id/textView4"
-        android:textSize="15dp"
+        android:textSize="30dp"
         android:textColor="#ff020202"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/textView3"
@@ -59,7 +59,7 @@
         android:id="@+id/textView5"
         android:layout_marginTop="20dp"
         android:textColor="#ff050505"
-        android:textSize="15dp"
+        android:textSize="30dp"
         android:layout_below="@+id/textView4"
         android:layout_alignLeft="@+id/textView4"
         android:layout_alignStart="@+id/textView4" />
@@ -72,7 +72,7 @@
         android:layout_marginLeft="62dp"
         android:layout_marginStart="62dp"
         android:textColor="#ff0c0c0c"
-        android:textSize="10dp"
+        android:textSize="25dp"
         android:layout_alignBottom="@+id/textView"
         android:layout_toRightOf="@+id/textView"
         android:layout_toEndOf="@+id/textView" />
@@ -82,7 +82,7 @@
         android:layout_height="wrap_content"
         android:hint="nombre"
         android:id="@+id/nombre"
-        android:textSize="10dp"
+        android:textSize="25dp"
         android:textColor="#ff010101"
         android:layout_alignBottom="@+id/textView2"
         android:layout_alignLeft="@+id/claveContrato"
@@ -93,7 +93,7 @@
         android:layout_height="wrap_content"
         android:hint="$00000"
         android:id="@+id/pagos"
-        android:textSize="10dp"
+        android:textSize="25dp"
         android:textColor="#ff030303"
         android:layout_alignBottom="@+id/textView4"
         android:layout_alignLeft="@+id/nombre"
@@ -104,7 +104,7 @@
         android:layout_height="wrap_content"
         android:hint="maderas finas"
         android:id="@+id/paquete"
-        android:textSize="10dp"
+        android:textSize="25dp"
         android:textColor="#ff030303"
         android:layout_above="@+id/textView4"
         android:layout_alignLeft="@+id/pagos"
@@ -119,17 +119,16 @@
         android:layout_alignLeft="@+id/pagos"
         android:layout_alignStart="@+id/pagos"
         android:textColor="#ff070707"
-        android:textSize="10dp" />
+        android:textSize="25dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Costo"
         android:id="@+id/textView6"
-        android:textSize="15dp"
+        android:textSize="30dp"
         android:textColor="#ff030303"
-        android:layout_alignBaseline="@+id/textView4"
-        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignTop="@+id/paquete"
         android:layout_alignRight="@+id/textView8"
         android:layout_alignEnd="@+id/textView8" />
 
@@ -138,74 +137,76 @@
         android:layout_height="wrap_content"
         android:hint="$00000"
         android:id="@+id/costo"
-        android:textSize="10dp"
-        android:layout_alignBottom="@+id/textView7"
-        android:layout_toRightOf="@+id/textView7"
-        android:layout_toEndOf="@+id/textView7"
-        android:layout_marginLeft="82dp"
-        android:layout_marginStart="82dp" />
+        android:textSize="25dp"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/saldo"
+        android:layout_alignStart="@+id/saldo" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Saldo"
         android:id="@+id/textView7"
-        android:textSize="15dp"
+        android:textSize="30dp"
         android:textColor="#ff060606"
-        android:layout_below="@+id/claveContrato"
-        android:layout_alignLeft="@+id/textView8"
-        android:layout_alignStart="@+id/textView8" />
+        android:layout_alignTop="@+id/claveContrato"
+        android:layout_toRightOf="@+id/paquete"
+        android:layout_toEndOf="@+id/paquete"
+        android:layout_marginLeft="154dp"
+        android:layout_marginStart="154dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="$0000"
         android:id="@+id/saldo"
-        android:textSize="10dp"
-        android:layout_below="@+id/nombre"
-        android:layout_alignRight="@+id/costo"
-        android:layout_alignEnd="@+id/costo" />
+        android:textSize="25dp"
+        android:layout_marginLeft="93dp"
+        android:layout_marginStart="93dp"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pago"
         android:id="@+id/textView8"
-        android:textSize="15dp"
+        android:textSize="30dp"
         android:textColor="#ff0c0c0c"
-        android:layout_below="@+id/nombre"
-        android:layout_alignRight="@+id/cancelar"
-        android:layout_alignEnd="@+id/cancelar" />
+        android:layout_alignTop="@+id/nombre"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="                "
         android:id="@+id/pago"
-        android:textSize="10dp"
-        android:layout_above="@+id/textView5"
-        android:layout_alignRight="@+id/saldo"
-        android:layout_alignEnd="@+id/saldo" />
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignLeft="@+id/costo"
+        android:layout_alignStart="@+id/costo" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="pagar"
         android:id="@+id/pagar"
-        android:textSize="15dp"
-        android:layout_alignBaseline="@+id/cancelar"
-        android:layout_alignBottom="@+id/cancelar"
-        android:layout_toLeftOf="@+id/claveContrato"
-        android:layout_toStartOf="@+id/claveContrato" />
+        android:textSize="25dp"
+        android:layout_below="@+id/parcialidad"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginTop="146dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="cancelar"
         android:id="@+id/cancelar"
-        android:textSize="15dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/paquete"
-        android:layout_toEndOf="@+id/paquete" />
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/pagar"
+        android:layout_alignLeft="@+id/parcialidad"
+        android:layout_alignStart="@+id/parcialidad" />
 
 </RelativeLayout>

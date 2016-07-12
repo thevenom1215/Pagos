@@ -1,9 +1,12 @@
 package com.example.thevenom1215.prueba;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewTreeObserver;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -11,8 +14,16 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.menu);
     }
+
+
+
+    //metodo  para abrir la ventana de abrir fichas que se relaciona con boton grafico imageButton1
+        public void abrir_recibos(View v){
+        Intent abrir = new Intent(v.getContext(),Recibos.class);
+        startActivity(abrir);}
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
